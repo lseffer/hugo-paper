@@ -12,6 +12,8 @@
   <!-- Meta -->
   <meta name="theme-color" />
 
+  {{ partial "custom-meta.html" . }}
+
   {{ $site_author := or site.Author.name site.Params.name site.Title }}
   <!---->
   {{ if eq .Kind "page" }}
